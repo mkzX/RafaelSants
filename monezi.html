@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prontuário Eletrônico do Hospital</title>
+</head>
+<body>
+
+    <h1>Prontuário Eletrônico</h1>
+    <form>
+        <label for="nome">Nome Completo:</label>
+        <input type="text" name="nome">
+        <br>
+        <br>
+        <label for="aniversario">Data de Nascimento: </label>
+        <input type="date" name="aniversario">
+        <br>
+        <br>
+        <label for="tel">Telefone:</label>
+        <input type="text" name="tel">
+        <br>
+        <br>
+        <label for="email">E-mail:</label>
+        <input type="text" name="email">
+        <br>
+        <br>
+        <label for="cpf">CPF:</label>
+        <input type="text" name="cpf">
+        <br>
+        <br>
+        <label for="senha">Senha:</label>
+        <input type="text" name="senha">
+        <br>
+        <br>
+        <label for="genero">Genero:</label>
+        <select value="Genero">
+            <option>Masculino</option>
+            <option>Feminino</option>
+        </select>
+        <br>
+		<br>
+			<label for="altura">Altura (em cm):</label>
+			<input type="number" id="altura" name="altura" min="0" max="300" step="1" required>
+		<br>
+        <br>
+        <label for="foto">Foto do Paciente:</label>
+        <input type="file" name="foto">
+        <br>
+        <br>
+        <select value="Genero">
+
+        </select>
+
+        <label for="notas">Notas Adicionais:</label><br>
+        <textarea name="notas" rows="4" cols="50"></textarea><br><br>
+
+    </form>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico de Saúde</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        h2 {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Histórico de Consultas</h2>
+    <table>
+        <tr>
+            <th>Data</th>
+            <th>Médico</th>
+            <th>Diagnóstico</th>
+        </tr>
+        <tr>
+            <td>20/08/2024</td>
+            <td>Dr. João Silva</td>
+            <td>Hipertensão</td>
+        </tr>
+        <tr>
+            <td>15/07/2024</td>
+            <td>Dra. Maria Oliveira</td>
+            <td>Diabetes Tipo 2</td>
+        </tr>
+    </table>
+
+    <h2>Medicamentos Prescritos</h2>
+    <table>
+        <tr>
+            <th>Medicamento</th>
+            <th>Dosagem</th>
+            <th>Instruções</th>
+        </tr>
+        <tr>
+            <td>Metformina</td>
+            <td>500mg</td>
+            <td>Tomar 1 vez ao dia</td>
+        </tr>
+        <tr>
+            <td>Atenolol</td>
+            <td>50mg</td>
+            <td>Tomar 2 vezes ao dia</td>
+        </tr>
+    </table>
+
+    <h2>Resultados de Exames</h2>
+    <table>
+        <tr>
+            <th>Data</th>
+            <th>Tipo de Exame</th>
+            <th>Resultado</th>
+        </tr>
+        <tr>
+            <td>10/08/2024</td>
+            <td>Hemograma</td>
+            <td>Normal</td>
+        </tr>
+        <tr>
+            <td>05/07/2024</td>
+            <td>Colesterol</td>
+            <td>Alto</td>
+        </tr>
+    </table>
+</body>
+</html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados de Exames e Histórico de Cirurgias</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        h2 {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Resultados de Exames</h2>
+    <table>
+        <tr>
+            <th>Data</th>
+            <th>Tipo de Exame</th>
+            <th>Resultado</th>
+        </tr>
+        <tr>
+            <td>10/08/2024</td>
+            <td>Hemograma</td>
+            <td>Normal</td>
+        </tr>
+        <tr>
+            <td>05/07/2024</td>
+            <td>Colesterol</td>
+            <td>Alto</td>
+        </tr>
+    </table>
+
+    <h2>Histórico de Cirurgias</h2>
+    <table>
+        <tr>
+            <th>Data</th>
+            <th>Cirurgia</th>
+            <th>Observações</th>
+        </tr>
+        <tr>
+            <td>12/06/2023</td>
+            <td>Cirurgia de Apendicite</td>
+            <td>Recuperação sem complicações</td>
+        </tr>
+        <tr>
+            <td>30/04/2022</td>
+            <td>Cirurgia de Vesícula</td>
+            <td>Recuperação com complicações</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+</body>
+</html>
